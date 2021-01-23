@@ -32,11 +32,17 @@
                 <executions>
                     <execution>
                         <id>prepare-agent</id>
-                        <phase>initialize</phase>
                         <goals>
                             <goal>prepare-agent</goal>
                         </goals>
                     </execution>
+                    <execution>
+                        <id>report</id>
+                        <goals>
+                            <goal>report</goal>
+                        </goals>
+                    </execution>
+
                     <execution>
                         <id>check</id>
                         <goals>
@@ -48,7 +54,6 @@
                 <configuration>
                     <rules>
                         <rule>
-                            <element>BUNDLE</element>
                             <limits>
                                 <limit>
                                     <counter>BRANCH</counter>
